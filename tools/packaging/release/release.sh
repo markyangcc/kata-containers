@@ -83,7 +83,7 @@ function _next_release_version()
 	esac
 
 	next_release_number="${next_major}.${next_minor}.0"
-	echo "${next_release_number}"
+	echo "${next_release_number}-test"
 }
 
 function _update_version_file()
