@@ -197,8 +197,7 @@ function _publish_multiarch_manifest()
 			docker manifest create ${registry}:${tag} \
 				--amend ${registry}:${tag}-amd64 \
 				--amend ${registry}:${tag}-arm64 \
-				--amend ${registry}:${tag}-s390x \
-				--amend ${registry}:${tag}-ppc64le
+				--amend ${registry}:${tag}-s390x
 
 			docker manifest push ${registry}:${tag}
 		done
